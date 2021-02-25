@@ -1,22 +1,31 @@
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Keyword {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.next();
-        String[] str = {"break","case","continue","default","defer","else","for","func","goto","if","map","range","return","struct","type","var"};
-        int flag = 0;
-        for (String value : str) {
-            if (value.equals(s)) {
-                flag = 1;
-                break;
-            }
+        String input = sc.next();
+        Set<String> s = new HashSet<String>();
+        s.add("break");
+        s.add("case");
+        s.add("continue");
+        s.add("default");
+        s.add("defer");
+        s.add("else");
+        s.add("for");
+        s.add("func");
+        s.add("goto");
+        s.add("if");
+        s.add("map");
+        s.add("range");
+        s.add("return");
+        s.add("struct");
+        s.add( "type");
+        s.add("var");
+        if(s.contains(input)){
+            System.out.println(input+" is a keyword");
         }
-        if (flag == 1) {
-            System.out.println(s+" is a keyword");
-        }
-        else {
-            System.out.println(s+" is not a keyword");
-        }
+        else System.out.println(input+" is not a keyword");
     }
 }
