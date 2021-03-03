@@ -17,3 +17,7 @@ public class Mindtree {
         System.out.println(ans/m);
     }
 }
+/* n=3,m=5
+   arr[i]=[3*1,3*2,.....,3*5]
+   ans = (3+6+9+12+15)/5 = 9
+*/
