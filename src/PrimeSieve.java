@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 public class PrimeSieve {
     public static void primeSieve(boolean[] arr, int range){
+        arr[0] = false;
+        arr[1] = false;
         for(int i=4; i<=range; i+=2){
             arr[i] = false;
         }
