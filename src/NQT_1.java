@@ -9,7 +9,7 @@ public class NQT_1 {
         char s1 = s.charAt(0);
         char s2 = s.charAt(s.length()-1);
         if(s.length()<2){
-            count=1;
+            count=-1;
         }
         else if(s1==s2) {
             for (int i = 0; i < s.length(); i++) {
